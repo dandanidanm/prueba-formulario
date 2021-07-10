@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de encuenta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Formulario de Encuenta</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea neque at eos, quia voluptatibus quas delectus nam sunt eum accusamus. Amet velit ducimus ipsum consectetur, similique sed vitae delectus optio.</p>
+    <form action="" id="survey-form">
+      <label for="dropdown">
+        <h3>Tipo de Encuesta</h3>
+        <select id="dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>  
+          <option value="3">3</option>
+        </select>
+      </label>
+      <label for="number" id="number-label">
+        <h3>Numero de lista</h3>
+        <input type="number" placeholder='numero' min="0" max="100" id="number" required>
+      </label>
+      <label for="name" id="name-label">
+        <h3>Nombre</h3>
+        <input type="text" id='name' placeholder="Nombre" required>
+      </label>
+      <label for="email" id="email-label">
+        <h3>Email</h3>
+        <input type="email" id="email" required placeholder="@email.com">
+      </label>
+      <label for="mouse">
+        <input type="checkbox" id="mouse" value="mouse" name="pc">Mouse
+      </label>
+      <label for="teclado">
+        <input type="checkbox" id="teclado" value="teclado"  name="pc">Teclado
+      </label>
+      <label for="monitor">
+        <input type="checkbox" id="monitor" value="monitor" name="pc">Monitor
+      </label>
+      <label for="audifonos">
+        <input type="checkbox" id="audifonos" value="audifonos" name="pc">Audifonos
+      </label>
+      <label for="rojo">
+        <input type="radio" name="color" id="rojo" value="rojo">Rojo
+      </label>
+      <label for="azul">
+        <input type="radio" name="color" id="azul" value="azul">Azul
+      </label>
+      <label for="amarillo">
+        <input type="radio" name="color" id="amarillo" value="amarillo">Amarillo
+      </label>
+      
+        <textarea cols="30" rows="10" placeholder="Agrega Comentario.."></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

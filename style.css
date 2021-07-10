@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  font-family:'Open Sans', sans-serif;
+}
+ *,
+ *:after,
+ *:before{
+   box-sizing:inherit;
+   padding: 0;
+   margin: 0;
+   line-height: 1.5;
+ }
+
+ .container{
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: azure;
+   border: 5px solid rgb(176, 236, 236);
+  }
+  
+  #survey-form{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 10px;
+ }
+
+ #survey-form h3{
+   font-size: 1rem;
+   
+ }
+ textarea{
+  resize: none;
+  grid-column: 1/4;
+  margin: 1rem;
+ }
+ button{
+   padding: .8rem 2rem;
+   justify-self: center;
+   align-self: center;
+ }
