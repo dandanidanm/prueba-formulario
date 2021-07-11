@@ -96,3 +96,15 @@ html {
  h1, p {
    text-align: center;
  }
+
+ @media screen and (max-width: 800px) 
+{
+  #survey-form {
+  width: 65%; 
+  height: auto;}
+
+  h1, p {
+    text-align: center;
+    width: 65%;
+  }
+}
