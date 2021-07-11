@@ -12,53 +12,66 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="title">Formulario de Encuenta</h1>
-    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea neque at eos, quia voluptatibus quas delectus nam sunt eum accusamus. Amet velit ducimus ipsum consectetur, similique sed vitae delectus optio.</p>
+    <h1 id="title">Tienda de Celulares</h1>
+    <p id="description">Nos dedicamos a vender el mejor telefono celular que se adapte a ti.</p>
     <form action="" id="survey-form">
-      <label for="dropdown">
-        <h3>Tipo de Encuesta</h3>
-        <select id="dropdown">
-          <option value="1">1</option>
-          <option value="2">2</option>  
-          <option value="3">3</option>
-        </select>
-      </label>
-      <label for="number" id="number-label">
-        <h3>Numero de lista</h3>
-        <input type="number" placeholder='numero' min="0" max="100" id="number" required>
-      </label>
       <label for="name" id="name-label">
-        <h3>Nombre</h3>
-        <input type="text" id='name' placeholder="Nombre" required>
+        Nombre:
+        <input type="text" id='name' placeholder=" Usuario" required>
       </label>
       <label for="email" id="email-label">
-        <h3>Email</h3>
-        <input type="email" id="email" required placeholder="@email.com">
+        Email:
+        <input type="email" id="email" required placeholder=" Usuario@email.com">
       </label>
-      <label for="mouse">
-        <input type="checkbox" id="mouse" value="mouse" name="pc">Mouse
+      <label for="number" id="number-label">
+        Edad:
+        <input type="number" placeholder=' Edad' min="0" max="100" id="number" required>
       </label>
-      <label for="teclado">
-        <input type="checkbox" id="teclado" value="teclado"  name="pc">Teclado
+      <label for="dropdown" id="dropdown-label">
+        Marca de telefono:
+        <select id="dropdown">
+          <option value="Samsung">Samsung</option>
+          <option value="Motorola">Motorola</option>  
+          <option value="iPhone">iPhone</option>
+          <option value="Redmi">Redmi</option>
+        </select>
       </label>
-      <label for="monitor">
-        <input type="checkbox" id="monitor" value="monitor" name="pc">Monitor
-      </label>
-      <label for="audifonos">
-        <input type="checkbox" id="audifonos" value="audifonos" name="pc">Audifonos
-      </label>
-      <label for="rojo">
-        <input type="radio" name="color" id="rojo" value="rojo">Rojo
-      </label>
-      <label for="azul">
-        <input type="radio" name="color" id="azul" value="azul">Azul
-      </label>
-      <label for="amarillo">
-        <input type="radio" name="color" id="amarillo" value="amarillo">Amarillo
-      </label>
-      
-        <textarea cols="30" rows="10" placeholder="Agrega Comentario.."></textarea>
-      
+      <div class="accesorios-color">
+        <div class="accesorios">
+          <h3>Accesorios</h3>
+          <label for="cargador">
+            <input type="checkbox" id="cargador" value="cargador" name="celular">Cargador
+          </label>
+          <label for="teclado">
+            <input type="checkbox" id="teclado" value="teclado"  name="celular">Teclado
+          </label>
+          <label for="protector">
+            <input type="checkbox" id="protector" value="protector" name="celular">Protector
+          </label>
+          <label for="audifonos">
+            <input type="checkbox" id="audifonos" value="audifonos" name="celular">Audifonos
+          </label>
+        </div>
+        <div class="color">
+          <h3>Color</h3>
+          <label for="rojo">
+            <input type="radio" name="color" id="rojo" value="rojo">Rojo
+          </label>
+          <label for="azul">
+            <input type="radio" name="color" id="azul" value="azul">Azul
+          </label>
+          <label for="amarillo">
+            <input type="radio" name="color" id="amarillo" value="amarillo">Amarillo
+          </label>
+          <label for="negro">
+            <input type="radio" name="color" id="negro" value="negro">Negro
+          </label>
+          <label for="blanco">
+            <input type="radio" name="color" id="blanco" value="blanco">Blanco
+          </label>
+        </div>
+      </div>
+      <textarea cols="30" rows="10" placeholder="Agrega Comentario.."></textarea>
       <button type="submit">Enviar</button>
     </form>
   </div>
